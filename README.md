@@ -4,13 +4,15 @@ A jQuery carousel slider plugin, which works with percentages instead if pixel v
 
 ## Usage
 
-$('.my_selector').superFunHappySlide(options)
+Include jquery, superfunhappyslide.js and superfunhappyslide.css
+
+    $('.my_selector').superFunHappySlide(options)
 
 ## Options
 
-  {
-    first_slide: 0,                // integer or 'random', default: 0
+
+    first_slide: 0,               // integer or 'random', default: 0
     directional_navigation: true, // boolean, default: true
     bullet_navigation: true,      // boolean, default: true
     animation_speed: 300          // integer (in ms), default: 400
-  }
+

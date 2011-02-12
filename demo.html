@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Super Fun Happy Slide!</title>
+  <link rel="stylesheet" href="superfunhappyslide.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <script type="text/javascript" src="superfunhappyslide.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('#funny').superFunHappySlide({
+      first_slide: 'random'
+    });   
+    $('#slider').superFunHappySlide({
+      directional_navigation: false
+    });
+
+    $('#slow-and-small').superFunHappySlide({
+      animation_speed: 1000,
+      bullet_navigation: false
+    });
+  })
+  </script>
+  <style type="text/css" media="screen">
+    body, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+    #slider {
+      height: 200px;
+    }
+    figure {
+      display: block;
+      text-align: center;
+      border: 1px dotted black;
+    }
+
+    #funny { height: 200px;}
+    #funny li, #slow-and-small div {
+      list-style:none;
+      font: bold 120px/200px Helvetica, Arial, sans-serif;
+      color: rgba(255,255,255,0.75);
+      text-align: center;
+      text-shadow: 0 2px 2px rgba(255,255,255,0.8), 0 -2px 2px rgba(0,0,0,0.2);
+    }
+
+    .center-court {
+      width: 300px;
+      margin: 0 auto;
+    }
+    
+    #slow-and-small {
+      width: 300px;
+      height: 100px;
+    }
+    #slow-and-small div {
+      font-size: 50px;
+      line-height: 100px;
+    }
+    
+    .happyslide-wrap {
+      margin-bottom: 100px;
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <ul id="funny">
+    <li style="background-color:red">1</li>
+    <li style="background-color:orange">2</li>
+    <li style="background-color:yellow">3</li>
+    <li style="background-color:yellowgreen">4</li>
+    <li style="background-color:green">5</li>
+  </ul>
+  
+  <div id="slider">
+    <figure><img src="http://placehold.it/800x200/ff0000/ffffff"></figure>
+    <figure><img src="http://placehold.it/800x200/ffff00/ffffff"></figure>
+    <figure><img src="http://placehold.it/800x200/00ff00/ffffff"></figure>
+    <figure><img src="http://placehold.it/800x200/00ffff/ffffff"></figure>
+    <figure><img src="http://placehold.it/800x200/0000ff/ffffff"></figure>
+    <figure><img src="http://placehold.it/800x200/ff00ff/ffffff"></figure>
+  </div>
+
+
+  <div class="center-court">
+    <div id="slow-and-small">
+      <div style="background-color:red">1</div>
+      <div style="background-color:orange">2</div>
+      <div style="background-color:yellow">3</div>
+      <div style="background-color:yellowgreen">4</div>
+      <div style="background-color:green">5</div>
+    </div>
+  </div>
+  
+</body>
+</html>
